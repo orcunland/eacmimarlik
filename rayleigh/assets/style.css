@@ -1,0 +1,98 @@
+/*==========================================================*/
+/* Main Elements
+/*==========================================================*/
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	overflow: hidden;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+a {
+	-webkit-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+
+img {
+	max-width: 100%;
+}
+
+/*==========================================================*/
+/* Swiper slider
+/*==========================================================*/
+
+.swiper-container {
+	overflow: hidden;
+	background: #FFFFFF;
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-container:after {
+	position: absolute;
+	content: '';
+	background: #F0F0F0;
+	width: 100%;
+	height: 50%;
+	bottom: 0;
+	z-index: -1;
+}
+
+.swiper-slide {
+	position: relative;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+
+.swiper-slide a {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+	max-width: 560px;
+}
+
+/* Navigation Arrows */
+
+.swiper-container .nav-arrow {
+	position: absolute;
+	top: 50%;
+	font-size: 24px;
+	margin-top: -25px;
+	width: 60px;
+	height: 50px;
+	text-align: center;
+	z-index: 2;
+	color: #FFFFFF;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.swiper-container .nav-left {
+	background-image: url(nav-left.png);
+	left: 0;
+}
+
+.swiper-container .nav-right {
+	background-image: url(nav-right.png);
+	right: 0;
+}
+
+.hidden {
+	display: none;
+}
